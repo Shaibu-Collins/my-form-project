@@ -19,7 +19,7 @@ const ContactForm = () => {
         '8etXrTl3Zg_B-IiWN'
 
       );
-      setStatus({ type: 'success', message: '🚀 Success! Your data is in my inbox.' });
+      setStatus({ type: 'success', message: '🚀 Success! Your data is successfully sent.' });
       reset();
     } catch (error) {
       setStatus({ type: 'error', message: '❌ Oops! Something went wrong.' });
