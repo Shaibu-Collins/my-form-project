@@ -13,10 +13,10 @@ const ContactForm = () => {
 
     try {
       await emailjs.sendForm(
-        'service_5q37j6d',
-        'template_yze46eh',
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
         form.current,
-        '8etXrTl3Zg_B-IiWN'
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
 
       );
       setStatus({ type: 'success', message: '🚀 Success! Your data is successfully sent.' });
